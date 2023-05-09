@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Form Title</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title">Form Title</h1>
+  <p id="description">Short explanation of the form.</p>
+  <form id="survey-form">
+    <label for="name" id="name-label">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+    <label for="email" id="email-label">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+    <label for="number" id="number-label">Number:</label>
+    <input type="number" id="number" name="number" placeholder="Enter a number between 1 and 10" min="1" max="10" required>
+
+    <label for="dropdown">Select an option:</label>
+    <select id="dropdown" name="dropdown">
+      <option value="option1">Mangalore</option>
+      <option value="option2">Bangalore</option>
+    </select>
+
+    <fieldset> 
+      <label>Select an option:</label>
+      <p style="color:white">Click on one of the text labels to toggle the related radio button:</p>
+      <!-- <label for="radio1"><input type="radio" id="radio1" name="radio-group" value="option1">Option 1</label> -->
+       <label for="radio1"><input type="radio" id="radio1"  name="radio-group" value="option1">HTML</label>
+      <input type="radio" id="css"  value="CSS">
+      <label for="css">CSS</label><br>
+      <!-- <label for="radio2"><input type="radio" id="radio2" name="radio-group" value="option2">Option 2</label> -->
+     </fieldset>
+
+    <fieldset id="f2"> -->
+      <label>Select one or more options:</label>
+      <p style="color:white">Did u guessed correctly?:</p>
+      <label for="checkbox1"><input type="checkbox" id="checkbox1" name="checkbox-group" value="option1">Yes</label>
+      <label for="checkbox2"><input type="checkbox" id="checkbox2" name="checkbox-group" value="option2">No</label>
+    <!-- </fieldset> -->
+
+    <label for="comments">Additional comments:</label>
+    <textarea id="comments" name="comments"></textarea>
+
+    <button type="submit" id="submit">Submit</button>
+  </form>
+</body>
+</html>
